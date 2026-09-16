@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -26,10 +27,10 @@
   window.KORA_CONFIG = Object.assign(window.KORA_CONFIG || {}, window.KORA_SITE_CONFIG);
 </script>
 <!-- KORA_GOOGLE_FONTS_START -->
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap"/></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap"></noscript>
 <!-- KORA_GOOGLE_FONTS_END -->
 <style>
 
@@ -567,490 +568,457 @@ footer a { transition: color .2s; }
 </style>
 </head>
 <body>
-
 <div class="page-wrap">
-
-  <!-- HEADER -->
-  <header class="site-header" id="siteHeader">
-    <div class="site-header-inner">
-      <a class="site-logo" href="#top">
-        <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/de8c94d8-887e-4625-825f-ec262dbc28df/1789559559_u29vml.png" alt="32th Oral Care">
-      </a>
-
-      <nav class="desktop-nav">
-        <a class="nav-tab" href="#about">About</a>
-        <a class="nav-tab" href="#services">Services</a>
-        <a class="nav-tab" href="#reviews">Reviews</a>
-        <a class="nav-tab" href="#faq">FAQ</a>
-        <a class="nav-tab-cta" href="#contact">Book →</a>
-      </nav>
-
-      <button type="button" id="menuToggle" class="burger-btn" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <div class="mobile-menu">
-    <div class="mobile-overlay" id="mobileOverlay">
-      <div class="mobile-panel">
-        <div class="mobile-panel-header">
-          <span class="mobile-panel-title">32th Oral Care</span>
-          <button type="button" class="menu-close" aria-label="Close">×</button>
-        </div>
-        <a class="mobile-menu-link" href="#about">About</a>
-        <a class="mobile-menu-link" href="#services">Services</a>
-        <a class="mobile-menu-link" href="#reviews">Reviews</a>
-        <a class="mobile-menu-link" href="#faq">FAQ</a>
-        <a class="mobile-menu-cta" href="#contact">Book a visit</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="top"></div>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-eyebrow" data-reveal="">
-        <span>[ BREWSTER, NY ]</span><span class="hero-eyebrow-sep">/</span><span class="hero-eyebrow-muted">FAMILY &amp; COSMETIC DENTISTRY</span>
-      </div>
-      <h1 class="hero-title" data-reveal="">Healthy smiles, engineered with care.</h1>
-      <div class="hero-row" data-reveal="">
-        <p class="hero-desc">Gentle, honest, unhurried dentistry for the whole family in Brewster — led by Dr. Balu M. Krishna, DDS, MDS, with same-day emergency care when you need it.</p>
-        <div class="hero-actions">
-          <a class="btn-primary" href="#contact">Book appointment</a>
-          <a class="btn-outline" href="tel:+18452793482">(845) 279-3482</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-media">
-      <div class="hero-image-wrap" data-reveal="">
-        <img class="hero-image" src="https://quseprdus1.blob.core.windows.net/kora-business-images/v2-uploads/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/9e84b691-e5af-4f66-b85c-5cfaa5c6958b-studio-hero.webp" alt="Modern dental care at 32th Oral Care">
-      </div>
-      <div class="hero-stats" data-reveal="">
-        <div class="hero-stat">
-          <div class="hero-stat-label">RATING</div>
-          <div class="hero-stat-value">4.2 / 5 <span class="hero-stat-star">★</span></div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">REVIEWS</div>
-          <div class="hero-stat-value">49 on Google</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">PATIENTS</div>
-          <div class="hero-stat-value">All ages</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">EMERGENCY</div>
-          <div class="hero-stat-value">Same-day</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section-pad section-anchor">
-    <div class="studio-layout">
-      <div class="studio-sidebar sticky" data-reveal="">
-        <div class="section-index">01 / ABOUT</div>
-      </div>
-      <div data-reveal="">
-        <h2 class="section-title">A neighbourhood practice that runs on listening.</h2>
-        <div class="about-split">
-          <div>
-            <p class="about-text">32th Oral Care is a family and cosmetic dental practice in Brewster, led by Dr. Balu M. Krishna, DDS, MDS. We take the time to understand what you need, explain your options plainly, and recommend only what genuinely helps.</p>
-            <p class="about-text">From a child's first checkup to full-mouth reconstruction, we care for every age under one roof — with same-day emergency appointments and telehealth consultations when you need them.</p>
-            <div class="about-features">
-              <div class="about-feature">
-                <div class="about-feature-title">Gentle &amp; unhurried</div>
-                <div class="about-feature-desc">We move at your pace.</div>
-              </div>
-              <div class="about-feature">
-                <div class="about-feature-title">Honest advice</div>
-                <div class="about-feature-desc">No upselling, ever.</div>
-              </div>
-              <div class="about-feature">
-                <div class="about-feature-title">All ages welcome</div>
-                <div class="about-feature-desc">Kids to seniors.</div>
-              </div>
-              <div class="about-feature">
-                <div class="about-feature-title">Same-day help</div>
-                <div class="about-feature-desc">Relief when it counts.</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img class="about-doctor-img" src="https://quseprdus1.blob.core.windows.net/kora-business-images/v2-uploads/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/1f80db09-8273-4672-8434-479430d552a0-doctor-studio.webp" alt="Dr. Balu M. Krishna, DDS, MDS">
-            <div class="about-doctor-caption">
-              <div class="about-doctor-name">DR. BALU M. KRISHNA</div>
-              <div class="about-doctor-role">DDS, MDS — OWNER &amp; LEAD DENTIST</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="services-section section-pad section-anchor">
-    <div class="studio-layout">
-      <div class="studio-sidebar" data-reveal="">
-        <div class="section-index">02 / SERVICES</div>
-      </div>
-      <div data-reveal="">
-        <h2 class="section-title">Everything under one roof.</h2>
-        <p class="section-lead">Routine care to full reconstruction — the complete range your family needs to stay healthy and confident.</p>
-        <div class="services-grid">
-
-          <div class="svc-card">
-            <div class="svc-card__img-wrap">
-              <img class="svc-card__img" src="https://images.unsplash.com/photo-1560070201-d3d11effa179?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="General &amp; Preventive">
-              <span class="svc-badge">01</span>
-            </div>
-            <div class="svc-card__body">
-              <h3 class="svc-card__title">General &amp; Preventive</h3>
-              <p class="svc-card__desc">Routine exams, digital X-rays, and gentle cleanings that keep small problems small.</p>
-              <div class="svc-tags">
-                <span class="svc-tag">EXAMS</span>
-                <span class="svc-tag">X-RAYS</span>
-                <span class="svc-tag">CLEANINGS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card">
-            <div class="svc-card__img-wrap">
-              <img class="svc-card__img" src="https://images.unsplash.com/photo-1681939282781-341ac4f61996?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cosmetic Dentistry">
-              <span class="svc-badge">02</span>
-            </div>
-            <div class="svc-card__body">
-              <h3 class="svc-card__title">Cosmetic Dentistry</h3>
-              <p class="svc-card__desc">Brighten and refine your smile with conservative, natural-looking treatments.</p>
-              <div class="svc-tags">
-                <span class="svc-tag">WHITENING</span>
-                <span class="svc-tag">VENEERS</span>
-                <span class="svc-tag">BONDING</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card">
-            <div class="svc-card__img-wrap">
-              <img class="svc-card__img" src="https://images.unsplash.com/photo-1663755489920-5e09f66d011a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Restorative Dentistry">
-              <span class="svc-badge">03</span>
-            </div>
-            <div class="svc-card__body">
-              <h3 class="svc-card__title">Restorative Dentistry</h3>
-              <p class="svc-card__desc">Rebuild function and comfort with durable, precise restorations.</p>
-              <div class="svc-tags">
-                <span class="svc-tag">CROWNS</span>
-                <span class="svc-tag">BRIDGES</span>
-                <span class="svc-tag">DENTURES</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card">
-            <div class="svc-card__img-wrap">
-              <img class="svc-card__img" src="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dental Implants">
-              <span class="svc-badge">04</span>
-            </div>
-            <div class="svc-card__body">
-              <h3 class="svc-card__title">Dental Implants</h3>
-              <p class="svc-card__desc">Replace missing teeth with stable, natural-feeling implant solutions.</p>
-              <div class="svc-tags">
-                <span class="svc-tag">SINGLE</span>
-                <span class="svc-tag">IMPLANT DENTURES</span>
-                <span class="svc-tag">FULL-MOUTH</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card">
-            <div class="svc-card__img-wrap">
-              <img class="svc-card__img" src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Emergency Dentistry">
-              <span class="svc-badge">05</span>
-            </div>
-            <div class="svc-card__body">
-              <h3 class="svc-card__title">Emergency Dentistry</h3>
-              <p class="svc-card__desc">Same-day relief for toothaches, breaks, and lost fillings or crowns.</p>
-              <div class="svc-tags">
-                <span class="svc-tag">SAME-DAY</span>
-                <span class="svc-tag">TOOTHACHE</span>
-                <span class="svc-tag">BROKEN TEETH</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card">
-            <div class="svc-card__img-wrap">
-              <img class="svc-card__img" src="https://images.unsplash.com/photo-1681939278218-a755fb2bf2d3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Children &amp; Family">
-              <span class="svc-badge">06</span>
-            </div>
-            <div class="svc-card__body">
-              <h3 class="svc-card__title">Children &amp; Family</h3>
-              <p class="svc-card__desc">Calm, friendly care for every age — from a first visit to senior smiles.</p>
-              <div class="svc-tags">
-                <span class="svc-tag">KIDS</span>
-                <span class="svc-tag">PREVENTION</span>
-                <span class="svc-tag">ALL AGES</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section id="reviews" class="section-pad section-anchor">
-    <div class="studio-layout">
-      <div class="studio-sidebar" data-reveal="">
-        <div class="section-index">03 / REVIEWS</div>
-      </div>
-      <div data-reveal="">
-        <div class="reviews-header">
-          <h2 class="section-title">What patients say.</h2>
-          <div class="reviews-meta">4.2/5 · <span class="reviews-meta-stars">★★★★☆</span> · 49 REVIEWS</div>
-        </div>
-        <div class="reviews-grid">
-
-          <div class="review-card">
-            <div class="review-accent"></div>
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Dr. Krishna took the time to explain everything and never made me feel rushed. The most relaxed I've ever been at a dentist."</p>
-            <div class="review-author">MARIA D. <span class="review-author-role">/ VERIFIED PATIENT</span></div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-accent"></div>
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Called with a bad toothache in the morning and they fit me in the same day. Honest about what I actually needed, too."</p>
-            <div class="review-author">JAMES P. <span class="review-author-role">/ VERIFIED PATIENT</span></div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-accent"></div>
-            <div class="review-stars">★★★★☆</div>
-            <p class="review-text">"Friendly front desk, spotless office, and gentle cleanings. They're wonderful with my kids as well."</p>
-            <div class="review-author">AISHA R. <span class="review-author-role">/ VERIFIED PATIENT</span></div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="faq-section section-pad section-anchor">
-    <div class="studio-layout">
-      <div class="studio-sidebar" data-reveal="">
-        <div class="section-index section-index--light">04 / FAQ</div>
-      </div>
-      <div data-reveal="">
-        <h2 class="section-title section-title--light">Questions, answered.</h2>
-        <div class="faq-list">
-
-          <div class="faq-item open" data-faq-index="0">
-            <button type="button" class="faq-toggle">
-              <span class="faq-toggle-inner">
-                <span class="faq-num">01</span>
-                <span class="faq-question">Are you accepting new patients?</span>
-              </span>
-              <span class="faq-sign-wrap"><span class="faq-sign">−</span></span>
-            </button>
-            <p class="faq-answer">Yes. We welcome new patients of all ages and would be glad to schedule your first visit. Call (845) 279-3482 to get started.</p>
-          </div>
-
-          <div class="faq-item" data-faq-index="1">
-            <button type="button" class="faq-toggle">
-              <span class="faq-toggle-inner">
-                <span class="faq-num">02</span>
-                <span class="faq-question">Do you see dental emergencies the same day?</span>
-              </span>
-              <span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
-            </button>
-            <p class="faq-answer">Whenever possible, yes. If you're in pain or have a broken or knocked-out tooth, call us early and we'll do our best to see you the same day.</p>
-          </div>
-
-          <div class="faq-item" data-faq-index="2">
-            <button type="button" class="faq-toggle">
-              <span class="faq-toggle-inner">
-                <span class="faq-num">03</span>
-                <span class="faq-question">What are your office hours?</span>
-              </span>
-              <span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
-            </button>
-            <p class="faq-answer">We're open Monday 9:00 AM–6:30 PM, Tuesday through Thursday 9:00 AM–5:00 PM, and Friday 9:00 AM–2:00 PM. We're closed Saturday and Sunday.</p>
-          </div>
-
-          <div class="faq-item" data-faq-index="3">
-            <button type="button" class="faq-toggle">
-              <span class="faq-toggle-inner">
-                <span class="faq-num">04</span>
-                <span class="faq-question">Do you treat children?</span>
-              </span>
-              <span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
-            </button>
-            <p class="faq-answer">Absolutely. We're a family practice and care for children, adults, and seniors in a gentle, unhurried setting.</p>
-          </div>
-
-          <div class="faq-item" data-faq-index="4">
-            <button type="button" class="faq-toggle">
-              <span class="faq-toggle-inner">
-                <span class="faq-num">05</span>
-                <span class="faq-question">Do you offer virtual visits?</span>
-              </span>
-              <span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
-            </button>
-            <p class="faq-answer">Yes. Telehealth consultations are available for certain concerns — ask our team whether a virtual visit is right for you.</p>
-          </div>
-
-          <div class="faq-item" data-faq-index="5">
-            <button type="button" class="faq-toggle">
-              <span class="faq-toggle-inner">
-                <span class="faq-num">06</span>
-                <span class="faq-question">Which services do you provide?</span>
-              </span>
-              <span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
-            </button>
-            <p class="faq-answer">General and preventive care, cosmetic and restorative dentistry, dental implants, and emergency care — all under one roof.</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-pad section-anchor">
-    <div class="studio-layout">
-      <div class="studio-sidebar" data-reveal="">
-        <div class="section-index">05 / VISIT</div>
-      </div>
-      <div data-reveal="">
-        <h2 class="section-title">Book your visit.</h2>
-        <p class="section-lead">Call us or send a message and our team will get back to you shortly. New patients of every age are always welcome.</p>
-        <div class="contact-split">
-          <div class="form-wrap">
-            <div class="form-success">
-              <div class="form-success-title">Thank you.</div>
-              <p class="form-success-text">Your request has been received. We'll reach out soon to confirm. For urgent needs, please call (845) 279-3482.</p>
-            </div>
-            <form class="contact-form">
-              <div class="form-row">
-                <label class="form-field"><span class="form-label">Full name</span><input class="form-input" required="" type="text"></label>
-                <label class="form-field"><span class="form-label">Phone</span><input class="form-input" required="" type="tel"></label>
-              </div>
-              <label class="form-field"><span class="form-label">Email</span><input class="form-input" required="" type="email"></label>
-              <label class="form-field"><span class="form-label">Message</span><textarea class="form-input" rows="4"></textarea></label>
-              <button class="btn-primary" type="submit">Request appointment →</button>
-              <p class="form-disclaimer">For a dental emergency, please call us directly rather than using this form.</p>
-            </form>
-          </div>
-          <div class="contact-sidebar">
-            <div>
-              <div class="contact-sidebar-label">ADDRESS</div>
-              <div class="contact-sidebar-value">504 N Main St<br>Brewster, NY 10509</div>
-              <a class="dir-link" href="https://www.google.com/maps?q=504+N+Main+St,+Brewster,+NY+10509" target="_blank" rel="noopener">GET DIRECTIONS →</a>
-            </div>
-            <div class="contact-sidebar-divider"></div>
-            <div class="contact-sidebar-row">
-              <div>
-                <div class="contact-sidebar-label">PHONE</div>
-                <a class="contact-phone-link" href="tel:+18452793482">(845) 279-3482</a>
-              </div>
-              <div>
-                <div class="contact-sidebar-label">FAX</div>
-                <div class="contact-sidebar-value">(845) 278-1782</div>
-              </div>
-            </div>
-            <div class="contact-sidebar-divider"></div>
-            <div>
-              <div class="hours-header">
-                <div class="contact-sidebar-label">HOURS</div>
-                <span class="hours-status-text" data-status-text>Checking hours…</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="1">
-                <span>Monday</span>
-                <span>9:00 AM – 6:30 PM</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="2">
-                <span>Tuesday</span>
-                <span>9:00 AM – 5:00 PM</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="3">
-                <span>Wednesday</span>
-                <span>9:00 AM – 5:00 PM</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="4">
-                <span>Thursday</span>
-                <span>9:00 AM – 5:00 PM</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="5">
-                <span>Friday</span>
-                <span>9:00 AM – 2:00 PM</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="6">
-                <span>Saturday</span>
-                <span>Closed</span>
-              </div>
-              <div class="hours-row" data-hours-row data-day-index="0">
-                <span>Sunday</span>
-                <span>Closed</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="map-wrap" data-reveal="">
-          <iframe class="map-embed" title="32th Oral Care location" src="https://www.google.com/maps?q=504%20N%20Main%20St,%20Brewster,%20NY%2010509&amp;output=embed" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-brand-row">
-          <img src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/de8c94d8-887e-4625-825f-ec262dbc28df/1789559559_u29vml.png" alt="">
-          <span class="footer-brand-name">32th Oral Care</span>
-        </div>
-        <p class="footer-brand-desc">Gentle family &amp; cosmetic dentistry in Brewster, NY — led by Dr. Balu M. Krishna, DDS, MDS.</p>
-      </div>
-      <div>
-        <div class="footer-col-title">EXPLORE</div>
-        <div class="footer-links">
-          <a class="footer-link" href="#about">About</a>
-          <a class="footer-link" href="#services">Services</a>
-          <a class="footer-link" href="#reviews">Reviews</a>
-          <a class="footer-link" href="#faq">FAQ</a>
-          <a class="footer-link" href="#contact">Visit</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">CONTACT</div>
-        <div class="footer-contact">
-          <span>504 N Main St, Brewster, NY 10509</span>
-          <a href="tel:+18452793482">Phone: (845) 279-3482</a>
-          <span>Fax: (845) 278-1782</span>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 32TH ORAL CARE — ALL RIGHTS RESERVED</span>
-      <span>BREWSTER &amp; PUTNAM COUNTY, NY</span>
-    </div>
-  </footer>
-
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+<div class="site-header-inner">
+<a class="site-logo" href="#top">
+<img alt="32th Oral Care" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/de8c94d8-887e-4625-825f-ec262dbc28df/1789559559_u29vml.png"/>
+</a>
+<nav class="desktop-nav">
+<a class="nav-tab" href="#about">About</a>
+<a class="nav-tab" href="#services">Services</a>
+<a class="nav-tab" href="#reviews">Reviews</a>
+<a class="nav-tab" href="#faq">FAQ</a>
+<a class="nav-tab-cta" href="#contact">Book →</a>
+</nav>
+<button aria-label="Menu" class="burger-btn" id="menuToggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
 </div>
-
-<div aria-label="Design options" class="design-switcher" id="designSwitcher"><button aria-expanded="false" aria-label="Switch design" class="ds-toggle" id="dsToggle" type="button"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewBox="0 0 24 24" width="18"><polyline points="9 6 15 12 9 18"></polyline></svg></button><div class="ds-panel"><span>Design</span><a href="design1.html">1 · Clinical</a><a href="design2.html">2 · Editorial</a><a class="active" href="design3.html">3 · Studio</a></div></div>
+</header>
+<div class="mobile-menu">
+<div class="mobile-overlay" id="mobileOverlay">
+<div class="mobile-panel">
+<div class="mobile-panel-header">
+<span class="mobile-panel-title">32th Oral Care</span>
+<button aria-label="Close" class="menu-close" type="button">×</button>
+</div>
+<a class="mobile-menu-link" href="#about">About</a>
+<a class="mobile-menu-link" href="#services">Services</a>
+<a class="mobile-menu-link" href="#reviews">Reviews</a>
+<a class="mobile-menu-link" href="#faq">FAQ</a>
+<a class="mobile-menu-cta" href="#contact">Book a visit</a>
+</div>
+</div>
+</div>
+<div id="top"></div>
+<!-- HERO -->
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-eyebrow" data-reveal="">
+<span>[ BREWSTER, NY ]</span><span class="hero-eyebrow-sep">/</span><span class="hero-eyebrow-muted">FAMILY &amp; COSMETIC DENTISTRY</span>
+</div>
+<h1 class="hero-title" data-reveal="">Healthy smiles, engineered with care.</h1>
+<div class="hero-row" data-reveal="">
+<p class="hero-desc">Gentle, honest, unhurried dentistry for the whole family in Brewster — led by Dr. Balu M. Krishna, DDS, MDS, with same-day emergency care when you need it.</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#contact">Book appointment</a>
+<a class="btn-outline" href="tel:+18452793482">(845) 279-3482</a>
+</div>
+</div>
+</div>
+<div class="hero-media">
+<div class="hero-image-wrap" data-reveal="">
+<img alt="Modern dental care at 32th Oral Care" class="hero-image" src="https://quseprdus1.blob.core.windows.net/kora-business-images/v2-uploads/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/9e84b691-e5af-4f66-b85c-5cfaa5c6958b-studio-hero.webp"/>
+</div>
+<div class="hero-stats" data-reveal="">
+<div class="hero-stat">
+<div class="hero-stat-label">RATING</div>
+<div class="hero-stat-value">4.2 / 5 <span class="hero-stat-star">★</span></div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-label">REVIEWS</div>
+<div class="hero-stat-value">49 on Google</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-label">PATIENTS</div>
+<div class="hero-stat-value">All ages</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-label">EMERGENCY</div>
+<div class="hero-stat-value">Same-day</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="section-pad section-anchor" id="about">
+<div class="studio-layout">
+<div class="studio-sidebar sticky" data-reveal="">
+<div class="section-index">01 / ABOUT</div>
+</div>
+<div data-reveal="">
+<h2 class="section-title">A neighbourhood practice that runs on listening.</h2>
+<div class="about-split">
+<div>
+<p class="about-text">32th Oral Care is a family and cosmetic dental practice in Brewster, led by Dr. Balu M. Krishna, DDS, MDS. We take the time to understand what you need, explain your options plainly, and recommend only what genuinely helps.</p>
+<p class="about-text">From a child's first checkup to full-mouth reconstruction, we care for every age under one roof — with same-day emergency appointments and telehealth consultations when you need them.</p>
+<div class="about-features">
+<div class="about-feature">
+<div class="about-feature-title">Gentle &amp; unhurried</div>
+<div class="about-feature-desc">We move at your pace.</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-title">Honest advice</div>
+<div class="about-feature-desc">No upselling, ever.</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-title">All ages welcome</div>
+<div class="about-feature-desc">Kids to seniors.</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-title">Same-day help</div>
+<div class="about-feature-desc">Relief when it counts.</div>
+</div>
+</div>
+</div>
+<div>
+<img alt="Dr. Balu M. Krishna, DDS, MDS" class="about-doctor-img" src="https://quseprdus1.blob.core.windows.net/kora-business-images/v2-uploads/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/1f80db09-8273-4672-8434-479430d552a0-doctor-studio.webp"/>
+<div class="about-doctor-caption">
+<div class="about-doctor-name">DR. BALU M. KRISHNA</div>
+<div class="about-doctor-role">DDS, MDS — OWNER &amp; LEAD DENTIST</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES -->
+<section class="services-section section-pad section-anchor" id="services">
+<div class="studio-layout">
+<div class="studio-sidebar" data-reveal="">
+<div class="section-index">02 / SERVICES</div>
+</div>
+<div data-reveal="">
+<h2 class="section-title">Everything under one roof.</h2>
+<p class="section-lead">Routine care to full reconstruction — the complete range your family needs to stay healthy and confident.</p>
+<div class="services-grid">
+<div class="svc-card">
+<div class="svc-card__img-wrap">
+<img alt="General &amp; Preventive" class="svc-card__img" src="https://images.unsplash.com/photo-1560070201-d3d11effa179?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<span class="svc-badge">01</span>
+</div>
+<div class="svc-card__body">
+<h3 class="svc-card__title">General &amp; Preventive</h3>
+<p class="svc-card__desc">Routine exams, digital X-rays, and gentle cleanings that keep small problems small.</p>
+<div class="svc-tags">
+<span class="svc-tag">EXAMS</span>
+<span class="svc-tag">X-RAYS</span>
+<span class="svc-tag">CLEANINGS</span>
+</div>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-card__img-wrap">
+<img alt="Cosmetic Dentistry" class="svc-card__img" src="https://images.unsplash.com/photo-1681939282781-341ac4f61996?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<span class="svc-badge">02</span>
+</div>
+<div class="svc-card__body">
+<h3 class="svc-card__title">Cosmetic Dentistry</h3>
+<p class="svc-card__desc">Brighten and refine your smile with conservative, natural-looking treatments.</p>
+<div class="svc-tags">
+<span class="svc-tag">WHITENING</span>
+<span class="svc-tag">VENEERS</span>
+<span class="svc-tag">BONDING</span>
+</div>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-card__img-wrap">
+<img alt="Restorative Dentistry" class="svc-card__img" src="https://images.unsplash.com/photo-1663755489920-5e09f66d011a?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<span class="svc-badge">03</span>
+</div>
+<div class="svc-card__body">
+<h3 class="svc-card__title">Restorative Dentistry</h3>
+<p class="svc-card__desc">Rebuild function and comfort with durable, precise restorations.</p>
+<div class="svc-tags">
+<span class="svc-tag">CROWNS</span>
+<span class="svc-tag">BRIDGES</span>
+<span class="svc-tag">DENTURES</span>
+</div>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-card__img-wrap">
+<img alt="Dental Implants" class="svc-card__img" src="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<span class="svc-badge">04</span>
+</div>
+<div class="svc-card__body">
+<h3 class="svc-card__title">Dental Implants</h3>
+<p class="svc-card__desc">Replace missing teeth with stable, natural-feeling implant solutions.</p>
+<div class="svc-tags">
+<span class="svc-tag">SINGLE</span>
+<span class="svc-tag">IMPLANT DENTURES</span>
+<span class="svc-tag">FULL-MOUTH</span>
+</div>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-card__img-wrap">
+<img alt="Emergency Dentistry" class="svc-card__img" src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<span class="svc-badge">05</span>
+</div>
+<div class="svc-card__body">
+<h3 class="svc-card__title">Emergency Dentistry</h3>
+<p class="svc-card__desc">Same-day relief for toothaches, breaks, and lost fillings or crowns.</p>
+<div class="svc-tags">
+<span class="svc-tag">SAME-DAY</span>
+<span class="svc-tag">TOOTHACHE</span>
+<span class="svc-tag">BROKEN TEETH</span>
+</div>
+</div>
+</div>
+<div class="svc-card">
+<div class="svc-card__img-wrap">
+<img alt="Children &amp; Family" class="svc-card__img" src="https://images.unsplash.com/photo-1681939278218-a755fb2bf2d3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<span class="svc-badge">06</span>
+</div>
+<div class="svc-card__body">
+<h3 class="svc-card__title">Children &amp; Family</h3>
+<p class="svc-card__desc">Calm, friendly care for every age — from a first visit to senior smiles.</p>
+<div class="svc-tags">
+<span class="svc-tag">KIDS</span>
+<span class="svc-tag">PREVENTION</span>
+<span class="svc-tag">ALL AGES</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- REVIEWS -->
+<section class="section-pad section-anchor" id="reviews">
+<div class="studio-layout">
+<div class="studio-sidebar" data-reveal="">
+<div class="section-index">03 / REVIEWS</div>
+</div>
+<div data-reveal="">
+<div class="reviews-header">
+<h2 class="section-title">What patients say.</h2>
+<div class="reviews-meta">4.2/5 · <span class="reviews-meta-stars">★★★★☆</span> · 49 REVIEWS</div>
+</div>
+<div class="reviews-grid">
+<div class="review-card">
+<div class="review-accent"></div>
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Dr. Krishna took the time to explain everything and never made me feel rushed. The most relaxed I've ever been at a dentist."</p>
+<div class="review-author">MARIA D. <span class="review-author-role">/ VERIFIED PATIENT</span></div>
+</div>
+<div class="review-card">
+<div class="review-accent"></div>
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Called with a bad toothache in the morning and they fit me in the same day. Honest about what I actually needed, too."</p>
+<div class="review-author">JAMES P. <span class="review-author-role">/ VERIFIED PATIENT</span></div>
+</div>
+<div class="review-card">
+<div class="review-accent"></div>
+<div class="review-stars">★★★★☆</div>
+<p class="review-text">"Friendly front desk, spotless office, and gentle cleanings. They're wonderful with my kids as well."</p>
+<div class="review-author">AISHA R. <span class="review-author-role">/ VERIFIED PATIENT</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="faq-section section-pad section-anchor" id="faq">
+<div class="studio-layout">
+<div class="studio-sidebar" data-reveal="">
+<div class="section-index section-index--light">04 / FAQ</div>
+</div>
+<div data-reveal="">
+<h2 class="section-title section-title--light">Questions, answered.</h2>
+<div class="faq-list">
+<div class="faq-item open" data-faq-index="0">
+<button class="faq-toggle" type="button">
+<span class="faq-toggle-inner">
+<span class="faq-num">01</span>
+<span class="faq-question">Are you accepting new patients?</span>
+</span>
+<span class="faq-sign-wrap"><span class="faq-sign">−</span></span>
+</button>
+<p class="faq-answer">Yes. We welcome new patients of all ages and would be glad to schedule your first visit. Call (845) 279-3482 to get started.</p>
+</div>
+<div class="faq-item" data-faq-index="1">
+<button class="faq-toggle" type="button">
+<span class="faq-toggle-inner">
+<span class="faq-num">02</span>
+<span class="faq-question">Do you see dental emergencies the same day?</span>
+</span>
+<span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
+</button>
+<p class="faq-answer">Whenever possible, yes. If you're in pain or have a broken or knocked-out tooth, call us early and we'll do our best to see you the same day.</p>
+</div>
+<div class="faq-item" data-faq-index="2">
+<button class="faq-toggle" type="button">
+<span class="faq-toggle-inner">
+<span class="faq-num">03</span>
+<span class="faq-question">What are your office hours?</span>
+</span>
+<span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
+</button>
+<p class="faq-answer">We're open Monday 9:00 AM–6:30 PM, Tuesday through Thursday 9:00 AM–5:00 PM, and Friday 9:00 AM–2:00 PM. We're closed Saturday and Sunday.</p>
+</div>
+<div class="faq-item" data-faq-index="3">
+<button class="faq-toggle" type="button">
+<span class="faq-toggle-inner">
+<span class="faq-num">04</span>
+<span class="faq-question">Do you treat children?</span>
+</span>
+<span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
+</button>
+<p class="faq-answer">Absolutely. We're a family practice and care for children, adults, and seniors in a gentle, unhurried setting.</p>
+</div>
+<div class="faq-item" data-faq-index="4">
+<button class="faq-toggle" type="button">
+<span class="faq-toggle-inner">
+<span class="faq-num">05</span>
+<span class="faq-question">Do you offer virtual visits?</span>
+</span>
+<span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
+</button>
+<p class="faq-answer">Yes. Telehealth consultations are available for certain concerns — ask our team whether a virtual visit is right for you.</p>
+</div>
+<div class="faq-item" data-faq-index="5">
+<button class="faq-toggle" type="button">
+<span class="faq-toggle-inner">
+<span class="faq-num">06</span>
+<span class="faq-question">Which services do you provide?</span>
+</span>
+<span class="faq-sign-wrap"><span class="faq-sign">+</span></span>
+</button>
+<p class="faq-answer">General and preventive care, cosmetic and restorative dentistry, dental implants, and emergency care — all under one roof.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section-pad section-anchor" id="contact">
+<div class="studio-layout">
+<div class="studio-sidebar" data-reveal="">
+<div class="section-index">05 / VISIT</div>
+</div>
+<div data-reveal="">
+<h2 class="section-title">Book your visit.</h2>
+<p class="section-lead">Call us or send a message and our team will get back to you shortly. New patients of every age are always welcome.</p>
+<div class="contact-split">
+<div class="form-wrap">
+<div class="form-success">
+<div class="form-success-title">Thank you.</div>
+<p class="form-success-text">Your request has been received. We'll reach out soon to confirm. For urgent needs, please call (845) 279-3482.</p>
+</div>
+<form class="contact-form">
+<div class="form-row">
+<label class="form-field"><span class="form-label">Full name</span><input class="form-input" required="" type="text"/></label>
+<label class="form-field"><span class="form-label">Phone</span><input class="form-input" required="" type="tel"/></label>
+</div>
+<label class="form-field"><span class="form-label">Email</span><input class="form-input" required="" type="email"/></label>
+<label class="form-field"><span class="form-label">Message</span><textarea class="form-input" rows="4"></textarea></label>
+<button class="btn-primary" type="submit">Request appointment →</button>
+<p class="form-disclaimer">For a dental emergency, please call us directly rather than using this form.</p>
+</form>
+</div>
+<div class="contact-sidebar">
+<div>
+<div class="contact-sidebar-label">ADDRESS</div>
+<div class="contact-sidebar-value">504 N Main St<br/>Brewster, NY 10509</div>
+<a class="dir-link" href="https://www.google.com/maps?q=504+N+Main+St,+Brewster,+NY+10509" rel="noopener" target="_blank">GET DIRECTIONS →</a>
+</div>
+<div class="contact-sidebar-divider"></div>
+<div class="contact-sidebar-row">
+<div>
+<div class="contact-sidebar-label">PHONE</div>
+<a class="contact-phone-link" href="tel:+18452793482">(845) 279-3482</a>
+</div>
+<div>
+<div class="contact-sidebar-label">FAX</div>
+<div class="contact-sidebar-value">(845) 278-1782</div>
+</div>
+</div>
+<div class="contact-sidebar-divider"></div>
+<div>
+<div class="hours-header">
+<div class="contact-sidebar-label">HOURS</div>
+<span class="hours-status-text" data-status-text="">Checking hours…</span>
+</div>
+<div class="hours-row" data-day-index="1" data-hours-row="">
+<span>Monday</span>
+<span>9:00 AM – 6:30 PM</span>
+</div>
+<div class="hours-row" data-day-index="2" data-hours-row="">
+<span>Tuesday</span>
+<span>9:00 AM – 5:00 PM</span>
+</div>
+<div class="hours-row" data-day-index="3" data-hours-row="">
+<span>Wednesday</span>
+<span>9:00 AM – 5:00 PM</span>
+</div>
+<div class="hours-row" data-day-index="4" data-hours-row="">
+<span>Thursday</span>
+<span>9:00 AM – 5:00 PM</span>
+</div>
+<div class="hours-row" data-day-index="5" data-hours-row="">
+<span>Friday</span>
+<span>9:00 AM – 2:00 PM</span>
+</div>
+<div class="hours-row" data-day-index="6" data-hours-row="">
+<span>Saturday</span>
+<span>Closed</span>
+</div>
+<div class="hours-row" data-day-index="0" data-hours-row="">
+<span>Sunday</span>
+<span>Closed</span>
+</div>
+</div>
+</div>
+</div>
+<div class="map-wrap" data-reveal="">
+<iframe class="map-embed" loading="lazy" src="https://www.google.com/maps?q=504%20N%20Main%20St,%20Brewster,%20NY%2010509&amp;output=embed" title="32th Oral Care location"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="footer-brand-row">
+<img alt="" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/de8c94d8-887e-4625-825f-ec262dbc28df/1789559559_u29vml.png"/>
+<span class="footer-brand-name">32th Oral Care</span>
+</div>
+<p class="footer-brand-desc">Gentle family &amp; cosmetic dentistry in Brewster, NY — led by Dr. Balu M. Krishna, DDS, MDS.</p>
+</div>
+<div>
+<div class="footer-col-title">EXPLORE</div>
+<div class="footer-links">
+<a class="footer-link" href="#about">About</a>
+<a class="footer-link" href="#services">Services</a>
+<a class="footer-link" href="#reviews">Reviews</a>
+<a class="footer-link" href="#faq">FAQ</a>
+<a class="footer-link" href="#contact">Visit</a>
+</div>
+</div>
+<div>
+<div class="footer-col-title">CONTACT</div>
+<div class="footer-contact">
+<span>504 N Main St, Brewster, NY 10509</span>
+<a href="tel:+18452793482">Phone: (845) 279-3482</a>
+<span>Fax: (845) 278-1782</span>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 32TH ORAL CARE — ALL RIGHTS RESERVED</span>
+<span>BREWSTER &amp; PUTNAM COUNTY, NY</span>
+</div>
+</footer>
+</div>
+<div aria-label="Design options" class="design-switcher" id="designSwitcher"><button aria-expanded="false" aria-label="Switch design" class="ds-toggle" id="dsToggle" type="button"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="18"><polyline points="9 6 15 12 9 18"></polyline></svg></button><div class="ds-panel"><span>Design</span><a href="design1.html">1 · Clinical</a><a href="design2.html">2 · Editorial</a><a class="active" href="design3.html">3 · Studio</a></div></div>
 <script>(function(){var s=document.getElementById("designSwitcher"),b=document.getElementById("dsToggle");if(!s||!b)return;b.addEventListener("click",function(e){e.stopPropagation();var o=s.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});document.addEventListener("click",function(e){if(s.classList.contains("open")&&!s.contains(e.target)){s.classList.remove("open");b.setAttribute("aria-expanded","false");}});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&s.classList.contains("open")){s.classList.remove("open");b.setAttribute("aria-expanded","false");}});})();</script>
 <script>
 (function(){
@@ -1204,7 +1172,6 @@ footer a { transition: color .2s; }
   else start();
 })();
 </script>
-
 <!-- KORA_BRANDING_FOOTER_SCRIPT_START -->
 <script>
 (function () {
