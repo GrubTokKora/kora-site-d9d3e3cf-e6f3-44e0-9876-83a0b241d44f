@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /.kora/
-Sitemap: https://www.32oralcare.com/sitemap.xml
+Disallow: /
