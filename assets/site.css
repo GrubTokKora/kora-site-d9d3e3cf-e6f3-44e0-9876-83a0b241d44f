@@ -137,7 +137,7 @@ main a:not(.btn-primary):not(.btn-outline):not(.nav-link):not(.nav-phone):not(.n
 .mobile-menu { display: none; }
 body.menu-open .mobile-menu { display: block; }
 .mobile-overlay {
-  position: fixed; inset: 0; z-index: 99;
+  position: fixed; inset: 0; z-index: 200;
   background: rgba(3, 20, 32, .5); backdrop-filter: blur(3px);
 }
 .mobile-panel {
@@ -147,12 +147,18 @@ body.menu-open .mobile-menu { display: block; }
   padding: 26px 24px; display: flex; flex-direction: column; gap: 4px;
   animation: fadeIn .25s ease;
 }
+body.menu-open .burger-btn {
+  visibility: hidden;
+  pointer-events: none;
+}
 .mobile-panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .mobile-panel-header img { height: 40px; }
 .menu-close {
-  width: 40px; height: 40px; border: 1px solid var(--border);
-  background: var(--brand-tint-alt); border-radius: var(--radius-sm);
-  cursor: pointer; font-size: 20px; color: var(--brand); line-height: 1;
+  width: 46px; height: 46px; border: 1.5px solid var(--border);
+  background: var(--brand-tint-alt); border-radius: 12px;
+  cursor: pointer; font-size: 26px; color: var(--brand); line-height: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0; flex-shrink: 0;
   transition: background .2s, border-color .2s;
 }
 .menu-close:hover { background: var(--brand-tint); }
@@ -289,9 +295,11 @@ body.menu-open .mobile-menu { display: block; }
   flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
   background: var(--brand-tint); color: var(--brand);
   display: flex; align-items: center; justify-content: center;
-  font-weight: 800; font-size: 14px;
+  font-weight: 800; font-size: 14px; margin-top: 1px;
 }
+.feature-copy { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .feature-text { font-weight: 600; color: var(--text); }
+.feature-sub { font-size: 14px; line-height: 1.45; color: var(--text-muted); }
 
 /* SERVICES */
 .services-section { background: var(--brand-tint-alt); }
