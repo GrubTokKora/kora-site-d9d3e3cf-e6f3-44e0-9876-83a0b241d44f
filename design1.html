@@ -25,17 +25,14 @@
   window.KORA_CONFIG = Object.assign(window.KORA_CONFIG || {}, window.KORA_SITE_CONFIG);
 </script>
 <!-- KORA_GOOGLE_FONTS_START -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap"></noscript>
+<!-- kora:fonts --><!-- /kora:fonts -->
 <!-- KORA_GOOGLE_FONTS_END -->
 <style>
 
 /* Design 1 · Clinical — Manrope + Sora | brand #034b76 · brand-dark #022f4b */
 :root {
-  --font-sans: "Manrope", system-ui, sans-serif;
-  --font-display: "Sora", system-ui, sans-serif;
+  --font-sans: var(--kora-font-body, "Manrope"), system-ui, sans-serif;
+  --font-display: var(--kora-font-heading, "Sora"), system-ui, sans-serif;
   --brand: #034b76;
   --brand-dark: #022f4b;
   --brand-light: #0a6ba6;

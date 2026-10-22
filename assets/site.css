@@ -1,8 +1,8 @@
 /* 32th Oral Care — live site stylesheet
    Brand system: Manrope + Sora | #034b76 / #022f4b */
 :root {
-  --font-sans: "Manrope", system-ui, sans-serif;
-  --font-display: "Sora", system-ui, sans-serif;
+  --font-sans: var(--kora-font-body, "Manrope"), system-ui, sans-serif;
+  --font-display: var(--kora-font-heading, "Sora"), system-ui, sans-serif;
   --brand: #034b76;
   --brand-dark: #022f4b;
   --brand-light: #0a6ba6;
