@@ -16,7 +16,7 @@ sections:
 - `#insurance` — insurance acceptance summary, three cards, call-to-verify note
 - `#reviews` — rating summary and review cards
 - `#faq` — accordion FAQs
-- `#contact` — appointment form (with required accuracy / HIPAA privacy / contact-consent acknowledgements), visit details, hours, map
+- `#contact` — appointment form (submits via mailto to the practice inbox; required accuracy / email-privacy / contact-consent acknowledgements), visit details, hours, map
 - `.site-footer` — brand, Explore, Services, Get in touch
 also: LocalBusiness and FAQPage JSON-LD in the document head.
 also: Live styles from `assets/site.css` only.

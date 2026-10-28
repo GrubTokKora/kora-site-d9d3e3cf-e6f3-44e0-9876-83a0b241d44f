@@ -34,6 +34,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "32th Oral Care",
+    "email": "info@32thoralcare.com",
     "description": "Brewster Family Dental (now 32th Oral Care) is a warm, modern family and cosmetic dental practice in Brewster, NY, serving Putnam County. Led by Dr. Balu M. Krishna, DDS, MDS. Services include general and preventive dentistry, cosmetic dentistry, restorative care, dental implants, wisdom teeth extractions and same-day emergency dentistry.",
     "image": "https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/d9d3e3cf-e6f3-44e0-9876-83a0b241d44f/medialibrary/1789493252_27382k.png",
     "address": {
@@ -537,27 +538,27 @@
 <div class="form-wrap" data-delay="0" data-reveal="">
 <div class="form-success">
 <div class="form-success-icon">✓</div>
-<h3 class="form-success-title">Thank you!</h3>
-<p class="form-success-text">Your request has been received. We'll reach out soon to confirm your appointment. For urgent needs, please call (845) 279-3482.</p>
+<h3 class="form-success-title">Almost done!</h3>
+<p class="form-success-text">Your email app should open with your request ready to go — press <strong>Send</strong> to finish. If it didn't open, email us at <a href="mailto:info@32thoralcare.com">info@32thoralcare.com</a> or call <a href="tel:+18452793482">(845) 279-3482</a>.</p>
 </div>
 <form class="contact-form">
 <div class="form-row">
 <label class="form-field">
 <span class="form-label">Full name</span>
-<input class="form-input" placeholder="Jane Doe" required="" type="text"/>
+<input class="form-input" name="name" placeholder="Jane Doe" required="" type="text"/>
 </label>
 <label class="form-field">
 <span class="form-label">Phone</span>
-<input class="form-input" placeholder="(845) 000-0000" required="" type="tel"/>
+<input class="form-input" name="phone" placeholder="(845) 000-0000" required="" type="tel"/>
 </label>
 </div>
 <label class="form-field">
 <span class="form-label">Email</span>
-<input class="form-input" placeholder="jane@email.com" required="" type="email"/>
+<input class="form-input" name="email" placeholder="jane@email.com" required="" type="email"/>
 </label>
 <label class="form-field">
 <span class="form-label">How can we help?</span>
-<textarea class="form-input" placeholder="Tell us what you need — a cleaning, a specific concern, or an emergency. Please don't include detailed medical history." rows="4"></textarea>
+<textarea class="form-input" name="message" placeholder="Tell us what you need — a cleaning, a specific concern, or an emergency. Please don't include detailed medical history." rows="4"></textarea>
 </label>
 <fieldset class="form-ack">
 <legend class="form-label">Acknowledgements</legend>
@@ -567,7 +568,7 @@
 </label>
 <label class="form-check">
 <input name="ack_privacy" required="" type="checkbox"/>
-<span>I understand my personal and health information will be kept confidential and used only for my care, scheduling, and billing, in line with HIPAA and the practice's Notice of Privacy Practices. I will complete the standard patient medical/dental history and consent forms before treatment.</span>
+<span>I understand this request is sent by regular email, which may not be encrypted, so I won't include detailed medical information. I will complete the practice's standard patient medical/dental history and consent forms before treatment.</span>
 </label>
 <label class="form-check">
 <input name="ack_contact" required="" type="checkbox"/>
@@ -575,7 +576,7 @@
 </label>
 </fieldset>
 <button class="btn-primary" type="submit">Request Appointment</button>
-<p class="form-disclaimer">This form is for scheduling requests, not medical emergencies. If you have a dental emergency, please call us.</p>
+<p class="form-disclaimer">Submitting opens your email app to send your request to info@32thoralcare.com. This form is for scheduling requests, not medical emergencies. If you have a dental emergency, please call us.</p>
 </form>
 </div>
 <div class="contact-info" data-delay="120" data-reveal="">
@@ -595,6 +596,10 @@
 <div class="contact-card-label">FAX</div>
 <div class="contact-card-value">(845) 278-1782</div>
 </div>
+</div>
+<div>
+<div class="contact-card-label">EMAIL</div>
+<a class="contact-phone-link" href="mailto:info@32thoralcare.com">info@32thoralcare.com</a>
 </div>
 </div>
 <div class="hours-card">
@@ -683,6 +688,7 @@
 <div class="footer-contact-text">504 N Main St,<br/>Brewster, NY 10509</div>
 <a class="footer-link" href="tel:+18452793482">Phone: (845) 279-3482</a>
 <div class="footer-contact-text">Fax: (845) 278-1782</div>
+<a class="footer-link" href="mailto:info@32thoralcare.com">info@32thoralcare.com</a>
 </div>
 </div>
 </div>
@@ -779,6 +785,20 @@
     if(!form) return;
     form.addEventListener('submit', function(e){
       e.preventDefault();
+      e.stopImmediatePropagation();
+      function val(n){ var el=form.elements[n]; return el ? el.value.trim() : ''; }
+      var subject='Appointment request – '+val('name');
+      var body=[
+        'Name: '+val('name'),
+        'Phone: '+val('phone'),
+        'Email: '+val('email'),
+        '',
+        'How can we help?',
+        val('message') || '(no message)',
+        '',
+        'Acknowledged: information is accurate; request is sent by regular email; OK to contact me by phone, text, or email.'
+      ].join('\n');
+      window.location.href='mailto:info@32thoralcare.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
       if(wrap) wrap.classList.add('sent');
       else {
         form.style.display='none';
