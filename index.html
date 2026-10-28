@@ -116,6 +116,14 @@
       },
       {
         "@type": "Question",
+        "name": "Does 32th Oral Care accept dental insurance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. 32th Oral Care accepts most major dental insurance plans, including most PPO plans. Call (845) 279-3482 and the team will check your coverage before your visit."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Does 32th Oral Care see children?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -156,6 +164,7 @@
 <nav class="desktop-nav">
 <a class="nav-link" href="#about">About</a>
 <a class="nav-link" href="#services">Services</a>
+<a class="nav-link" href="#insurance">Insurance</a>
 <a class="nav-link" href="#reviews">Reviews</a>
 <a class="nav-link" href="#faq">FAQ</a>
 <a class="nav-link" href="#contact">Contact</a>
@@ -179,6 +188,7 @@
 </div>
 <a class="mobile-menu-link" href="#about">About</a>
 <a class="mobile-menu-link" href="#services">Services</a>
+<a class="mobile-menu-link" href="#insurance">Insurance</a>
 <a class="mobile-menu-link" href="#reviews">Reviews</a>
 <a class="mobile-menu-link" href="#faq">FAQ</a>
 <a class="mobile-menu-link" href="#contact">Contact</a>
@@ -350,6 +360,34 @@
 </div>
 </div>
 </section>
+<!-- INSURANCE -->
+<section class="insurance-section section-pad section-anchor" id="insurance">
+<div class="section-inner">
+<div class="insurance-header" data-delay="0" data-reveal="">
+<div class="eyebrow">Insurance</div>
+<h2 class="section-title">Insurance we accept.</h2>
+<p class="section-lead">We accept most major dental insurance plans, including most PPO plans. Tell us your plan when you book and we'll check your coverage before your visit.</p>
+</div>
+<div class="insurance-grid">
+<div class="insurance-card" data-delay="0" data-reveal="">
+<span class="feature-check">✓</span>
+<h3 class="insurance-card__title">Most major PPO plans</h3>
+<p class="insurance-card__desc">We work with most major dental insurance carriers and PPO plans.</p>
+</div>
+<div class="insurance-card" data-delay="90" data-reveal="">
+<span class="feature-check">✓</span>
+<h3 class="insurance-card__title">We check your benefits</h3>
+<p class="insurance-card__desc">Share your insurance details with our team and we'll confirm what your plan covers.</p>
+</div>
+<div class="insurance-card" data-delay="180" data-reveal="">
+<span class="feature-check">✓</span>
+<h3 class="insurance-card__title">Clear costs up front</h3>
+<p class="insurance-card__desc">We explain coverage and any out-of-pocket cost before treatment begins.</p>
+</div>
+</div>
+<p class="insurance-note" data-delay="0" data-reveal="">Not sure if your plan is accepted? Call <a href="tel:+18452793482">(845) 279-3482</a> with your insurance card handy and we'll check for you.</p>
+</div>
+</section>
 <!-- REVIEWS -->
 <section class="reviews-section section-pad section-anchor" id="reviews">
 <div class="reviews-inner">
@@ -439,6 +477,15 @@
 </div>
 <div class="faq-item" data-faq-index="3">
 <button class="faq-toggle" type="button">
+<span class="faq-question">Do you accept dental insurance?</span>
+<span class="faq-icon"><span class="faq-sign">+</span></span>
+</button>
+<div class="faq-answer">
+<p>Yes. We accept most major dental insurance plans, including most PPO plans. Call (845) 279-3482 with your insurance details and we'll check your coverage before your visit.</p>
+</div>
+</div>
+<div class="faq-item" data-faq-index="4">
+<button class="faq-toggle" type="button">
 <span class="faq-question">Do you treat children?</span>
 <span class="faq-icon"><span class="faq-sign">+</span></span>
 </button>
@@ -446,7 +493,7 @@
 <p>Absolutely. We're a family practice and care for children, adults, and seniors in a gentle, unhurried setting.</p>
 </div>
 </div>
-<div class="faq-item" data-faq-index="4">
+<div class="faq-item" data-faq-index="5">
 <button class="faq-toggle" type="button">
 <span class="faq-question">Do you offer virtual visits?</span>
 <span class="faq-icon"><span class="faq-sign">+</span></span>
@@ -455,7 +502,7 @@
 <p>Yes. Telehealth consultations are available for certain concerns — ask our team whether a virtual visit is right for you.</p>
 </div>
 </div>
-<div class="faq-item" data-faq-index="5">
+<div class="faq-item" data-faq-index="6">
 <button class="faq-toggle" type="button">
 <span class="faq-question">Which services do you provide?</span>
 <span class="faq-icon"><span class="faq-sign">+</span></span>
@@ -499,8 +546,23 @@
 </label>
 <label class="form-field">
 <span class="form-label">How can we help?</span>
-<textarea class="form-input" placeholder="Tell us what you need — a cleaning, a specific concern, or an emergency." rows="4"></textarea>
+<textarea class="form-input" placeholder="Tell us what you need — a cleaning, a specific concern, or an emergency. Please don't include detailed medical history." rows="4"></textarea>
 </label>
+<fieldset class="form-ack">
+<legend class="form-label">Acknowledgements</legend>
+<label class="form-check">
+<input name="ack_accuracy" required="" type="checkbox"/>
+<span>I confirm the information I've provided is accurate and complete to the best of my knowledge.</span>
+</label>
+<label class="form-check">
+<input name="ack_privacy" required="" type="checkbox"/>
+<span>I understand my personal and health information will be kept confidential and used only for my care, scheduling, and billing, in line with HIPAA and the practice's Notice of Privacy Practices. I will complete the standard patient medical/dental history and consent forms before treatment.</span>
+</label>
+<label class="form-check">
+<input name="ack_contact" required="" type="checkbox"/>
+<span>I agree that 32th Oral Care may contact me by phone, text, or email about my appointment request. Message and data rates may apply.</span>
+</label>
+</fieldset>
 <button class="btn-primary" type="submit">Request Appointment</button>
 <p class="form-disclaimer">This form is for scheduling requests, not medical emergencies. If you have a dental emergency, please call us.</p>
 </form>
@@ -587,6 +649,7 @@
 <div class="footer-links">
 <a class="footer-link" href="#about">About</a>
 <a class="footer-link" href="#services">Services</a>
+<a class="footer-link" href="#insurance">Insurance</a>
 <a class="footer-link" href="#reviews">Reviews</a>
 <a class="footer-link" href="#faq">FAQ</a>
 <a class="footer-link" href="#contact">Contact</a>

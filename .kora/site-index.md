@@ -6,16 +6,17 @@ Design system: clinical-warm (stylesheet `assets/site.css`; `assets/styles.css` 
 
 ## index.html → /
 title: 32th Oral Care – Gentle Family Dentistry in Brewster, New York
-purpose: Home page — practice introduction, services, reviews, FAQ, hours/location, and booking.
+purpose: Home page — practice introduction, services, insurance, reviews, FAQ, hours/location, and booking.
 sections:
 - `#siteHeader` — fixed transparent→scrolled header
 - `.mobile-menu` — mobile overlay panel
 - `.hero` — full-viewport full-bleed hero
 - `#about` — about split with doctor portrait
 - `#services` — six service cards
+- `#insurance` — insurance acceptance summary, three cards, call-to-verify note
 - `#reviews` — rating summary and review cards
 - `#faq` — accordion FAQs
-- `#contact` — appointment form, visit details, hours, map
+- `#contact` — appointment form (with required accuracy / HIPAA privacy / contact-consent acknowledgements), visit details, hours, map
 - `.site-footer` — brand, Explore, Services, Get in touch
 also: LocalBusiness and FAQPage JSON-LD in the document head.
 also: Live styles from `assets/site.css` only.
