@@ -342,6 +342,29 @@ body.menu-open .burger-btn {
 }
 #services .svc-card:hover .svc-card__img { transform: scale(1.06); }
 
+/* INSURANCE */
+.insurance-section { background: var(--bg); }
+.insurance-header { text-align: center; max-width: 680px; margin: 0 auto; }
+.insurance-header .section-title { margin-top: 14px; }
+.insurance-header .section-lead { margin-top: 16px; }
+.insurance-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px; margin-top: 42px;
+}
+.insurance-card {
+  background: var(--brand-tint-alt); border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg); padding: 26px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.insurance-card .feature-check { margin-bottom: 4px; }
+.insurance-card__title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 1.15rem; color: var(--ink);
+}
+.insurance-card__desc { font-size: 15px; line-height: 1.6; color: var(--text-muted); }
+.insurance-note { text-align: center; margin-top: 30px; color: var(--text-mid); font-size: 15px; }
+.insurance-note a { font-weight: 700; }
+
 /* REVIEWS */
 .reviews-section { background: var(--brand-tint); }
 .reviews-inner {
@@ -449,6 +472,16 @@ body.menu-open .burger-btn {
 }
 .form-input:focus { border-color: var(--brand); }
 .form-input textarea, textarea.form-input { resize: vertical; }
+.form-ack { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.form-ack legend { margin-bottom: 4px; padding: 0; }
+.form-check {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 13.5px; line-height: 1.5; color: var(--text-mid); cursor: pointer;
+}
+.form-check input {
+  flex-shrink: 0; width: 18px; height: 18px; margin-top: 1px;
+  accent-color: var(--brand); cursor: pointer;
+}
 .form-disclaimer { font-size: 12.5px; color: var(--text-faint); text-align: center; }
 .contact-info { flex: 1 1 320px; min-width: 280px; display: flex; flex-direction: column; gap: 18px; }
 .contact-card-dark {
@@ -569,6 +602,10 @@ button, .faq-toggle, .burger-btn, .menu-close, .contact-form button[type="submit
   .hero-actions { margin-top: 14px; }
   .hero .btn-primary,
   .hero .btn-ghost { padding: 12px 20px; font-size: 14px; }
+}
+@media (min-width: 861px) and (max-width: 1120px) {
+  .desktop-nav { gap: 20px; }
+  .nav-phone { display: none; }
 }
 @media (min-width: 861px) {
   .desktop-nav { display: flex !important; }
